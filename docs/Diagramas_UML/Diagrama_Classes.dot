@@ -1,0 +1,21 @@
+digraph Classes {
+      graph [rankdir=LR, bgcolor="#ffffff", nodesep="0.55", ranksep="0.85", pad="0.28", splines=polyline];
+      node [shape=record, style="filled,rounded", fillcolor="#EDF4FB", color="#507D9E", penwidth=1.5, fontname="DejaVu Sans", fontsize=12];
+      edge [color="#6995B5", arrowsize=0.7, penwidth=1.35];
+      "TelaPrincipal" [label="{TelaPrincipal|+ interface Swing\\l+ bolaParada()\\l+ salvar(), abrir(), desfazer()\\l}"];
+      "CampoFutebol" [label="{CampoFutebol|+ paintComponent()\\l+ arrastar e soltar\\l}"];
+      "EstadoTatico" [label="{EstadoTatico|+ jogadores : List\\l+ jogadas : List\\l+ situacao : String\\l}"];
+      "BolasParadas" [label="{BolasParadas|+ aplicar()\\l+ PENALTI, FALTA, ESCANTEIO\\l}", fillcolor="#FFF0CB", color="#C58E29"];
+      "Jogador" [label="{Jogador|+ nome, numero, equipe\\l+ x, y, titular\\l}"];
+      "Jogada" [label="{Jogada|+ tipo\\l+ pontos, jogadorId\\l}"];
+      "Formacoes" [label="{Formacoes|+ posicoes()\\l+ aplicar()\\l}"];
+      "Geometria2D" [label="{Geometria2D|+ distanciaSegmento()\\l+ bresenham()\\l}"];
+      "PersistenciaJSON" [label="{PersistenciaJSON|+ salvar()\\l+ abrir()\\l}"];
+      "JsonSimples" [label="{JsonSimples|+ escrever()\\l+ ler()\\l}"];
+      "TelaPrincipal" -> {"CampoFutebol" "EstadoTatico" "BolasParadas" "Formacoes" "PersistenciaJSON"};
+      "BolasParadas" -> {"EstadoTatico" "Jogador"};
+      "CampoFutebol" -> {"Geometria2D" "Jogador" "Jogada"};
+      "EstadoTatico" -> {"Jogador" "Jogada"};
+      "PersistenciaJSON" -> "JsonSimples";
+    }
+    
