@@ -1,4 +1,4 @@
-# ⚽ Prancheta Pro — Simulador Tático Interativo de Futebol
+# Prancheta Pro — Simulador Tático Interativo de Futebol
 
 Prancheta tática digital feita em **Java Swing**: posicione os 22 jogadores num campo em escala real, aplique formações, desenhe passes, chutes e marcações, simule bolas paradas e reproduza as jogadas em animação.
 
@@ -6,7 +6,7 @@ Projeto extensionista de Computação Gráfica / Estruturas Dinâmicas. Sem depe
 
 ![Prancheta Pro](screenshots/programa.png)
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **22 titulares** (11 por equipe), bola e campo proporcional (105 × 68 m)
 - **12 formações:** 4-3-3, 4-4-2, 4-2-3-1, 3-5-2, 3-4-3, 4-1-4-1, 5-3-2, 4-5-1, 4-3-2-1, 3-4-2-1, 4-2-2-2 e 4-1-2-1-2
@@ -17,13 +17,13 @@ Projeto extensionista de Computação Gráfica / Estruturas Dinâmicas. Sem depe
 - **Salvar/abrir JSON** e **exportar PNG** do campo
 - **Desfazer** ilimitado (`Ctrl+Z`)
 
-## 🖼️ Capturas de tela
+##  Capturas de tela
 
 | Pênalti | Falta frontal |
 |---|---|
 | ![Pênalti](screenshots/penalti.png) | ![Falta](screenshots/falta.png) |
 
-## 🚀 Como executar
+##  Como executar
 
 **Requisito:** Java 8 ou superior instalado.
 
@@ -45,7 +45,7 @@ javac *.java
 java Main
 ```
 
-## 🎮 Como usar
+##  Como usar
 
 | Ação | Como fazer |
 |---|---|
@@ -61,7 +61,7 @@ java Main
 
 Há um arquivo de exemplo em [`Prancheta_Tatica_Futebol_BlueJ/exemplo_jogada.json`](Prancheta_Tatica_Futebol_BlueJ/exemplo_jogada.json) — abra-o pelo botão **Abrir JSON**.
 
-## 🗂️ Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 .
@@ -79,7 +79,7 @@ Há um arquivo de exemplo em [`Prancheta_Tatica_Futebol_BlueJ/exemplo_jogada.jso
 └── screenshots/
 ```
 
-## 🧪 Testes
+## Testes
 
 Teste automático sem interface gráfica: compile e execute `TestesProjeto.main`.
 
@@ -88,22 +88,22 @@ cd Prancheta_Tatica_Futebol_BlueJ
 javac *.java && java TestesProjeto
 ```
 
-## 📚 Documentação
+##  Documentação
 
 - [Manual / documentação extensionista](docs/Documentacao_Pracheta_Tatica_Extensionista.docx)
 - Diagramas UML: [classes](docs/Diagramas_UML/Diagrama_Classes.png) · [casos de uso](docs/Diagramas_UML/Diagrama_Casos_de_Uso.png)
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 Java · Swing · Graphics2D · algoritmo de Bresenham · persistência em JSON (parser próprio)
 
-## 👥 Autores
+##  Autores
 
 - João Lucas de Lima Souza
 - Pedro Chagas Neves de Farias Nascimento
 - Guilherme Pereira de Rivoredo
 - Eduardo Achkar Avancini
 
-## 📄 Licença
+##  Licença
 
 Projeto de finalidade educacional. Adicione uma licença (ex.: MIT) se quiser permitir reutilização.
